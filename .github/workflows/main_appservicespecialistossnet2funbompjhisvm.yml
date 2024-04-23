@@ -19,7 +19,7 @@ jobs:
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: 'dotnetcore|3.x'
+          dotnet-version: '3.x'  # Corrected version
           include-prerelease: true
 
       - name: Build with dotnet
@@ -51,7 +51,4 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'appservicespecialistossnet2funbompjhisvm'
-          slot-name: 'Production'
-          package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5888AD5A71F546749AB27E734B30AA75 }}
+          app-name: 'appservicespecialistossnet2
