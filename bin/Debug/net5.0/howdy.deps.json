@@ -8,7 +8,7 @@
       "TRACE",
       "DEBUG",
       "NET",
-      "NET5_0",
+      "NET3_0",
       "NETCOREAPP"
     ],
     "languageVersion": "9.0",
